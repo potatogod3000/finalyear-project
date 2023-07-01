@@ -1,11 +1,10 @@
-import cv2
-from PIL import Image
-from picamera2 import Picamera2, Preview	# Raspberry Pi Camera and Preview library
-from picamera2.previews import QtGlPreview	# QtGlPreview from Camera Previews library
-from libcamera import controls
-from push_button import push_count
-from screenshot import onscreen
-from time import sleep						# Sleep from Time library
+import cv2								# OpenCV library
+from picamera2 import Picamera2, Preview				# Raspberry Pi Camera 2 and its Previews library
+from picamera2.previews import QtGlPreview				# QtGlPreview from PiCamera2 Previews library
+from libcamera import controls						# libcamera library to control the camera parameters (AF Mode and Speed)
+from push_button import push_count					# Importing function from push_button.py file.
+from screenshot import onscreen						# Importing function from screenshot.py file.
+from time import sleep							# Sleep from Time library
 import pytesseract							# TesseractOCR library
 import espeakng								# eSpeakNG library
 
